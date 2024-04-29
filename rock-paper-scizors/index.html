@@ -6,6 +6,28 @@
     <title>Document</title>
     <script>
         console.log("Hello World")
+
+    // When the user inputs a choice
+    // Create a random number between 1 and 100
+    // IF number is smaller than 33 return scissor
+    // IF number is bigger than 67 return rock
+    // ELSE return paper
+        
+        function getComputerChoice(min, max){
+            return Math.floor(Math.random() * (max - min +1) + min);
+        }
+
+        let randomNumber = getComputerChoice(1, 100);
+        
+        if (randomNumber <= 33) {
+            console.log("scissor");
+        } else if (randomNumber >= 67) {
+            console.log("rock");
+        } else {
+            console.log("paper");
+        }
+
+        console.log(randomNumber);
     </script>
 </head>
 <body>
