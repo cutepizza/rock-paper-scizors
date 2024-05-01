@@ -28,6 +28,27 @@
         }
 
         console.log(randomNumber);
+
+    // Create a prompt that ask to the user their options
+    // IF user prompt is "rock", console will return "rock"
+    // ELSE IF the user prompt "scissors", console will return "scissors"
+    // ELSE IF the user prompt "paper", console will return "paper"
+    // Prompts should be valid no matter lowercase or uppercase
+
+        function getHumanChoice(){
+            
+            let humanChoice = prompt("What's yout choice?");
+
+        if (humanChoice.toLowerCase() === "rock") {
+            console.log("rock");
+        } else if (humanChoice.toLowerCase() === "scissors") {
+            console.log("scissors");
+        } else if (humanChoice.toLowerCase() === "paper") {
+            console.log("paper");
+        }
+        }
+
+        getHumanChoice();
     </script>
 </head>
 <body>
